@@ -13,7 +13,7 @@
     <groupId>org.clojure</groupId>
     <artifactId>clojure-contrib-parent</artifactId>
     <version>1.2.0-SNAPSHOT</version>
-    <relativePath>../../modules/parent/pom.xml</relativePath>
+    <relativePath>../../modules/clojure-contrib-parent/pom.xml</relativePath>
   </parent>
 
   <artifactId>clojure-contrib-logging</artifactId>

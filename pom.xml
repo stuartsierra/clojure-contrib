@@ -13,7 +13,7 @@
     <groupId>org.clojure</groupId>
     <artifactId>clojure-contrib-parent</artifactId>
     <version>1.2.0-SNAPSHOT</version>
-    <relativePath>modules/parent/pom.xml</relativePath>
+    <relativePath>modules/clojure-contrib-parent/pom.xml</relativePath>
   </parent>
 
   <artifactId>clojure-contrib</artifactId>
@@ -33,10 +33,9 @@
   </scm>
 
   <modules>
-    <module>modules/parent</module>
-    <module>modules/core</module>
-    <module>modules/logging</module>
-<!--    <module>modules/full</module>-->
+    <module>modules/clojure-contrib-parent</module>
+    <module>modules/clojure-contrib-core</module>
+    <module>modules/clojure-contrib-logging</module>
   </modules>
 
   <build>
@@ -46,7 +45,7 @@
         <configuration>
           <descriptors>
             <descriptor>src/main/assembly/dist.xml</descriptor>
-<!--            <descriptor>src/main/assembly/jar.xml</descriptor>-->
+            <descriptor>src/main/assembly/jar.xml</descriptor>
           </descriptors>
         </configuration>
         <executions>
