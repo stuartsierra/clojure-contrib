@@ -19,10 +19,34 @@
         <include>Revisions</include>
         <include>pom.xml</include>
         <include>src/**</include>
-        <include>target/*.jar</include>
         <include>launchers/**</include>
         <include>clojurescript/**</include>
       </includes>
     </fileSet>
   </fileSets>
+  <moduleSets>
+    <moduleSet>
+      <sources>
+        <useDefaultExcludes>true</useDefaultExcludes>
+        <outputDirectoryMapping>modules/${module.artifactId}</outputDirectoryMapping>
+        <fileSets>
+          <fileSet>
+            <excludes>
+              <exclude>target/**</exclude>
+            </excludes>
+          </fileSet>
+        </fileSets>
+      </sources>
+      <includes>
+        <include>org.clojure:clojure-contrib-parent</include>
+        <include>org.clojure:clojure-contrib-core</include>
+        <include>org.clojure:clojure-contrib-logging</include>
+      </includes>
+      <binaries>
+        <unpack>false</unpack>
+        <includeDependencies>false</includeDependencies>
+      </binaries>
+    </moduleSet>
+  </moduleSets>
+
 </assembly>
