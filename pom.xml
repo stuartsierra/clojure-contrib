@@ -29,6 +29,7 @@
     <module>modules/clojure-contrib-parent</module>
     <module>modules/clojure-contrib-core</module>
     <module>modules/clojure-contrib-logging</module>
+    <module>modules/clojure-contrib-complete</module>
   </modules>
 
   <build>
